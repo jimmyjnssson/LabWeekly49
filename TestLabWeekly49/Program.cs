@@ -27,7 +27,7 @@ namespace TestLabWeekly49
 
             // Sort the list first by office, then by purchase date
             var sortedAssets = product
-                .OrderBy(a => a is Computer ? 0 : 1)    // Sort by asset type: 0 for Computer and1 for Phone
+                .OrderBy(a => a is Computer ? 0 : 1)    // Sort by product type: 0 for Computer and 1 for Phone
                 .ThenBy(a => a.PurchaseDate)             // Then sort by purchase date
                 .ThenBy(a => a.Office.Location)          // Sort by office location
                 .ToList();

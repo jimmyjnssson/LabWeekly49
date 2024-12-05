@@ -19,7 +19,7 @@ namespace TestLabWeekly49
             Currency = currency;
         }
 
-        // Convert price from USD to local currency (for demonstration purposes)
+        // Convert price from USD to local currency 
         public double ConvertFromUSD(double priceUSD)
         {
             double exchangeRateUSD = 1.0;
